@@ -7,7 +7,9 @@ services:
     restart: always
     environment:
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: Y3rbolat_tb
+#      change password when you will want to run code again
+#      also change on database/connections.go
+      POSTGRES_PASSWORD: password
       POSTGRES_DB: postgres
     logging:
       options:

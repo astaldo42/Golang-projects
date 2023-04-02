@@ -10,7 +10,9 @@ import (
 var dbase *gorm.DB
 
 func Init() *gorm.DB {
-	db, err := gorm.Open("postgres", "user=postgres password=Y3rbolat_tb dbname=postgres sslmode=disable")
+	// change the password when you will run code
+	// also change password on docker-compose.yml
+	db, err := gorm.Open("postgres", "user=postgres password=password dbname=postgres sslmode=disable")
 	if err != nil {
 		log.Fatal(err)
 	}
