@@ -50,7 +50,7 @@ func main() {
 		}
 	}
 
-	fmt.Println("\n\033[1;33mOffers for today:\033[0m")
+	fmt.Println("\n\033[1;33mOffers:\033[0m")
 	fmt.Println(Store(Items))
 	//fmt.Println("-----------------------------")
 
